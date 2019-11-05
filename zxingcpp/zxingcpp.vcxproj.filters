@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="zxing">
+      <UniqueIdentifier>{782bf215-92aa-4c44-a000-5838475aaef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zxing\src">
+      <UniqueIdentifier>{fe620c35-3fbe-4575-8d31-2112d963f1cc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -20,6 +26,495 @@
     </ClInclude>
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\BarcodeGenerator.h">
+      <Filter>zxing</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\BarcodeReader.h">
+      <Filter>zxing</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\GdiplusInit.h">
+      <Filter>zxing</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\ImageReader.h">
+      <Filter>zxing</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\ImageWriter.h">
+      <Filter>zxing</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\BarcodeFormat.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\BinaryBitmap.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\BitArray.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\BitHacks.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\BitMatrix.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\BitSource.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ByteArray.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ByteMatrix.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\CharacterSet.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\CharacterSetECI.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\CustomData.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\DecodeHints.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\DecoderResult.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\DecodeStatus.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\DetectorResult.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\GenericGF.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\GenericGFPoly.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\GenericLuminanceSource.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\GlobalHistogramBinarizer.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\GridSampler.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\HybridBinarizer.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\LuminanceSource.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\MultiFormatReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\MultiFormatWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\PerspectiveTransform.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ReadBarcode.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\Reader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ReedSolomonDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ReedSolomonEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\Result.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ResultMetadata.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ResultPoint.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\TextDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\TextEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\TextUtfEncoding.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\WhiteRectDetector.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXBigInteger.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXConfig.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXContainerAlgorithms.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXFilesystem.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXNullable.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXNumeric.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXStrConvWorkaround.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\ZXTestSupport.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZDetector.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZDetectorResult.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZEncodingState.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZHighLevelEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZToken.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\aztec\AZWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMBitMatrixParser.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMDataBlock.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMDefaultPlacement.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMDetector.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMECB.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMECEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMEncoderContext.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMHighLevelEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMSymbolInfo.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMSymbolShape.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMVersion.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\datamatrix\DMWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\maxicode\MCBitMatrixParser.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\maxicode\MCDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\maxicode\MCReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCodabarReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCodabarWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCode39Reader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCode39Writer.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCode93Reader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCode93Writer.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCode128Patterns.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCode128Reader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODCode128Writer.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODEAN8Reader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODEAN8Writer.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODEAN13Reader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODEAN13Writer.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODEANManufacturerOrgSupport.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODITFReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODITFWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODMultiUPCEANReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODRowReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODRSS14Reader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODRSSExpandedReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODUPCAReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODUPCAWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODUPCEANCommon.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODUPCEANExtensionSupport.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODUPCEANReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODUPCEReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODUPCEWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\ODWriterHelper.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSDataCharacter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSExpandedBinaryDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSExpandedPair.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSExpandedRow.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSFieldParser.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSFinderPattern.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSGenericAppIdDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSPair.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\oned\rss\ODRSSReaderHelper.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFBarcodeMetadata.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFBarcodeValue.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFBoundingBox.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFCodeword.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFCodewordDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFCompaction.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFDecodedBitStreamParser.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFDecoderResultExtra.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFDetectionResult.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFDetectionResultColumn.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFDetector.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFHighLevelEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFModulusGF.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFModulusPoly.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFScanningDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\pdf417\PDFWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRAlignmentPattern.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRAlignmentPatternFinder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRBitMatrixParser.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRCodecMode.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRDataBlock.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRDataMask.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRDecoderMetadata.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRDetector.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRECB.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QREncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QREncodeResult.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRErrorCorrectionLevel.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRFinderPattern.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRFinderPatternFinder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRFinderPatternInfo.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRFormatInformation.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRMaskUtil.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRMatrixUtil.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRReader.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRVersion.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\qrcode\QRWriter.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\Big5MapTable.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\Big5TextDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\Big5TextEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\GBTextDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\GBTextEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\JPTextDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\JPTextEncoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\KRHangulMapping.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\KRTextDecoder.h">
+      <Filter>zxing\src</Filter>
+    </ClInclude>
+    <ClInclude Include="zxing\src\textcodec\KRTextEncoder.h">
+      <Filter>zxing\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -32,5 +527,397 @@
     <ClCompile Include="dllmain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="zxing\BarcodeGenerator.cpp">
+      <Filter>zxing</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\BarcodeReader.cpp">
+      <Filter>zxing</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\GdiplusInit.cpp">
+      <Filter>zxing</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\ImageReader.cpp">
+      <Filter>zxing</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\ImageWriter.cpp">
+      <Filter>zxing</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\BarcodeFormat.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\BitArray.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\BitMatrix.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\BitSource.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\CharacterSetECI.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\DecodeHints.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\DecodeStatus.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\GenericGF.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\GenericGFPoly.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\GenericLuminanceSource.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\GlobalHistogramBinarizer.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\GridSampler.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\HybridBinarizer.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\LuminanceSource.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\MultiFormatReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\MultiFormatWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\PerspectiveTransform.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\ReadBarcode.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\ReedSolomonDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\ReedSolomonEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\Result.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\ResultMetadata.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\ResultPoint.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\TextDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\TextEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\TextUtfEncoding.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\WhiteRectDetector.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\ZXBigInteger.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\aztec\AZDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\aztec\AZDetector.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\aztec\AZEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\aztec\AZHighLevelEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\aztec\AZReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\aztec\AZToken.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\aztec\AZWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMBitMatrixParser.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMDataBlock.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMDefaultPlacement.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMDetector.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMECEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMHighLevelEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMSymbolInfo.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMVersion.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\datamatrix\DMWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\maxicode\MCBitMatrixParser.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\maxicode\MCDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\maxicode\MCReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCodabarReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCodabarWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCode39Reader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCode39Writer.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCode93Reader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCode93Writer.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCode128Patterns.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCode128Reader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODCode128Writer.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODEAN8Reader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODEAN8Writer.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODEAN13Reader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODEAN13Writer.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODEANManufacturerOrgSupport.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODITFReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODITFWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODMultiUPCEANReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODRowReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODRSS14Reader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODRSSExpandedReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODUPCAReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODUPCAWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODUPCEANCommon.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODUPCEANExtensionSupport.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODUPCEANReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODUPCEReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODUPCEWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\ODWriterHelper.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\rss\ODRSSExpandedBinaryDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\rss\ODRSSFieldParser.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\rss\ODRSSGenericAppIdDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\oned\rss\ODRSSReaderHelper.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFBarcodeValue.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFBoundingBox.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFCodewordDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFDecodedBitStreamParser.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFDetectionResult.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFDetectionResultColumn.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFDetector.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFHighLevelEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFModulusGF.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFModulusPoly.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFScanningDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\pdf417\PDFWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRAlignmentPattern.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRAlignmentPatternFinder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRBitMatrixParser.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRCodecMode.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRDataBlock.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRDataMask.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRDetector.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QREncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRErrorCorrectionLevel.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRFinderPattern.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRFinderPatternFinder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRFormatInformation.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRMaskUtil.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRMatrixUtil.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRReader.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRVersion.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\qrcode\QRWriter.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\Big5MapTable.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\Big5TextDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\Big5TextEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\GBTextDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\GBTextEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\JPTextDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\JPTextEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\KRHangulMapping.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\KRTextDecoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+    <ClCompile Include="zxing\src\textcodec\KRTextEncoder.cpp">
+      <Filter>zxing\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="zxingcpp.def">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
