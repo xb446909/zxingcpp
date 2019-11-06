@@ -24,3 +24,6 @@ UPC_EAN_EXTENSION
 */
 
 int __stdcall GenerateBarcode(int width, int height, int margin, int eccLevel, const char* format, const char* text, unsigned char* buffer);
+
+//ÊäÈëÍ¼Ïñ±ØĞëÎª24bppRGBÍ¼Ïñ
+bool __stdcall ScanBarcode(int width, int height, unsigned char* buffer, char* text, bool tryRotate, bool fastMode);

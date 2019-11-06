@@ -3,13 +3,13 @@
 
 #include "stdafx.h"
 
-#include "TextDecoder.h"
 #include "BarcodeFormat.h"
 #include "MultiFormatWriter.h"
 #include "BitMatrix.h"
 #include "ByteMatrix.h"
 #include "TextUtfEncoding.h"
 #include "ZXStrConvWorkaround.h"
+#include "ReadBarcode.h"
 
 #include <iostream>
 #include <cstring>
@@ -125,10 +125,74 @@ std::string UnicodeToUTF8(const std::wstring& strUnicode)
 	return strUtf8;
 }
 
+std::wstring UTF8ToUnicode(const std::string& str)
+{
+	int nUnicodeLen = ::MultiByteToWideChar(CP_UTF8,
+		0,
+		str.c_str(),
+		-1,
+		NULL,
+		0);
+
+	wchar_t*  pUnicode;
+	pUnicode = new wchar_t[nUnicodeLen + 1];
+	memset((void*)pUnicode, 0, (nUnicodeLen + 1) * sizeof(wchar_t));
+
+	::MultiByteToWideChar(CP_UTF8,
+		0,
+		str.c_str(),
+		-1,
+		(LPWSTR)pUnicode,
+		nUnicodeLen);
+
+	std::wstring  strUnicode;
+	strUnicode = (wchar_t*)pUnicode;
+	delete[]pUnicode;
+
+	return strUnicode;
+}
+
+
+std::string UnicodeToANSI(const std::wstring& strUnicode)
+{
+	int nAnsiLen = WideCharToMultiByte(CP_ACP,
+		0,
+		strUnicode.c_str(),
+		-1,
+		NULL,
+		0,
+		NULL,
+		NULL);
+
+	char *pAnsi = new char[nAnsiLen + 1];
+	memset((void*)pAnsi, 0, (nAnsiLen + 1) * sizeof(char));
+
+	::WideCharToMultiByte(CP_ACP,
+		0,
+		strUnicode.c_str(),
+		-1,
+		pAnsi,
+		nAnsiLen,
+		NULL,
+		NULL);
+
+	std::string strAnsi;
+	strAnsi = pAnsi;
+	delete[]pAnsi;
+
+	return strAnsi;
+}
+
 std::string AnsiToUtf8(const std::string &strAnsi)
 {
 	std::wstring strUnicode = AnsiToUnicode(strAnsi);
 	return UnicodeToUTF8(strUnicode);
+}
+
+std::string Utf8ToAnsi(const std::string &strUtf8)
+{
+	std::wstring strUnicode = UTF8ToUnicode(strUtf8);
+	return UnicodeToANSI(strUnicode);
 }
 
 int __stdcall GenerateBarcode(int width, int height, int margin, int eccLevel, const char* format, const char* text, unsigned char* buffer)
@@ -147,5 +211,34 @@ int __stdcall GenerateBarcode(int width, int height, int margin, int eccLevel, c
 	auto utf8_str = AnsiToUtf8(text);
 	auto bitmap = writer.encode(TextUtfEncoding::FromUtf8(utf8_str), width, height).toByteMatrix();
 	memcpy(buffer, bitmap.data(), width * height);
+
 	return 0;
+}
+
+std::string WCharToMbs(std::wstring str)
+{
+	DWORD num = WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, NULL, 0, NULL, 0);
+
+	char *pChar = NULL;
+	pChar = (char*)malloc(num * sizeof(char));
+	if (pChar == NULL)
+	{
+		free(pChar);
+	}
+	memset(pChar, 0, num * sizeof(char));
+
+	WideCharToMultiByte(CP_ACP, 0, str.c_str(), -1, pChar, num, NULL, 0);
+	std::string mbs(pChar);
+	free(pChar);
+	return mbs;
+}
+
+bool __stdcall ScanBarcode(int width, int height, unsigned char* buffer, char* text, bool tryRotate, bool fastMode)
+{
+	auto result = ReadBarcode(width, height, buffer, width * 3, 3, 0, 1, 2, { BarcodeFormatFromString("") }, tryRotate, !fastMode);
+	if (result.isValid())
+	{
+		strcpy(text, WCharToMbs(result.text()).c_str());
+	}
+	return result.isValid();
 }
