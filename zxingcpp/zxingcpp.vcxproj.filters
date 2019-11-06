@@ -516,6 +516,9 @@
     <ClInclude Include="zxing\src\textcodec\KRTextEncoder.h">
       <Filter>zxing\src</Filter>
     </ClInclude>
+    <ClInclude Include="zxingcpp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">

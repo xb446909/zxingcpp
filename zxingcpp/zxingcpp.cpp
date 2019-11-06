@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 
+#include "TextDecoder.h"
 #include "BarcodeFormat.h"
 #include "MultiFormatWriter.h"
 #include "BitMatrix.h"
@@ -64,6 +65,72 @@ static std::string ParseFormat(std::string str)
 }
 
 
+
+
+std::wstring AnsiToUnicode(const std::string &strAnsi)
+{
+	//获取转换所需的接收缓冲区大小
+	int  nUnicodeLen = ::MultiByteToWideChar(CP_ACP,
+		0,
+		strAnsi.c_str(),
+		-1,
+		NULL,
+		0);
+	//分配指定大小的内存
+	wchar_t* pUnicode = new wchar_t[nUnicodeLen + 1];
+	memset((void*)pUnicode, 0, (nUnicodeLen + 1) * sizeof(wchar_t));
+
+	//转换
+	::MultiByteToWideChar(CP_ACP,
+		0,
+		strAnsi.c_str(),
+		-1,
+		(LPWSTR)pUnicode,
+		nUnicodeLen);
+
+	std::wstring  strUnicode;
+	strUnicode = (wchar_t*)pUnicode;
+	delete[]pUnicode;
+
+	return strUnicode;
+}
+
+std::string UnicodeToUTF8(const std::wstring& strUnicode)
+{
+	int nUtf8Length = WideCharToMultiByte(CP_UTF8,
+		0,
+		strUnicode.c_str(),
+		-1,
+		NULL,
+		0,
+		NULL,
+		NULL);
+
+	char* pUtf8 = new char[nUtf8Length + 1];
+	memset((void*)pUtf8, 0, sizeof(char) * (nUtf8Length + 1));
+
+	::WideCharToMultiByte(CP_UTF8,
+		0,
+		strUnicode.c_str(),
+		-1,
+		pUtf8,
+		nUtf8Length,
+		NULL,
+		NULL);
+
+	std::string strUtf8;
+	strUtf8 = pUtf8;
+	delete[] pUtf8;
+
+	return strUtf8;
+}
+
+std::string AnsiToUtf8(const std::string &strAnsi)
+{
+	std::wstring strUnicode = AnsiToUnicode(strAnsi);
+	return UnicodeToUTF8(strUnicode);
+}
+
 int __stdcall GenerateBarcode(int width, int height, int margin, int eccLevel, const char* format, const char* text, unsigned char* buffer)
 {
 	auto barcodeFormat = BarcodeFormatFromString(format);
@@ -74,9 +141,11 @@ int __stdcall GenerateBarcode(int width, int height, int margin, int eccLevel, c
 		writer.setMargin(margin);
 	if (eccLevel >= 0)
 		writer.setEccLevel(eccLevel);
+	writer.setEncoding(CharacterSet::UTF8);
 
-	auto bitmap = writer.encode(TextUtfEncoding::FromUtf8(text), width, height).toByteMatrix();
+
+	auto utf8_str = AnsiToUtf8(text);
+	auto bitmap = writer.encode(TextUtfEncoding::FromUtf8(utf8_str), width, height).toByteMatrix();
 	memcpy(buffer, bitmap.data(), width * height);
 	return 0;
 }
-

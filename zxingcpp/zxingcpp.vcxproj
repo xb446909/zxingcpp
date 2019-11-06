@@ -154,6 +154,7 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="zxingcpp.h" />
     <ClInclude Include="zxing\BarcodeGenerator.h" />
     <ClInclude Include="zxing\BarcodeReader.h" />
     <ClInclude Include="zxing\GdiplusInit.h" />
